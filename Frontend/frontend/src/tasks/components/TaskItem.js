@@ -32,7 +32,7 @@ const TaskItem = (props) => {
 		setShowConfirmModal(false);
 		try {
 			await sendRequest(
-				`http://localhost:2000/api/tasks/${props.id}`,
+				process.env.REACT_APP_BACKEND_URL + `/tasks/${props.id}`,
 				"DELETE",
 				null,
 				{

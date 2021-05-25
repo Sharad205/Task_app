@@ -54,7 +54,7 @@ const NewTask = () => {
 				formState.inputs.requirements.value
 			);
 			await sendRequest(
-				"http://localhost:2000/api/tasks",
+				process.env.REACT_APP_BACKEND_URL + "/tasks",
 				"POST",
 				formData,
 				{

@@ -48,7 +48,7 @@ const UpdateTask = () => {
 		const fetchTask = async () => {
 			try {
 				const responseData = await sendRequest(
-					`http://localhost:2000/api/tasks/${taskId}`
+					`${process.env.REACT_APP_BACKEND_URL}/tasks/${taskId}`
 				);
 				setLoadedTask(responseData.task);
 				setFormData(
@@ -81,7 +81,7 @@ const UpdateTask = () => {
 		event.preventDefault();
 		try {
 			await sendRequest(
-				`http://localhost:2000/api/tasks/${taskId}`,
+				`${process.env.REACT_APP_BACKEND_URL}/tasks/${taskId}`,
 				"PATCH",
 				JSON.stringify({
 					title: formState.inputs.title.value,

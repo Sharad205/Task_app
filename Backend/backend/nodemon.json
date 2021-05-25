@@ -1,0 +1,8 @@
+{
+	"env": {
+		"Q_USER": "Sv123",
+		"Q_PASSWORD": "Spv098",
+		"Q_NAME": "myData",
+		"JWT_KEY": "supersecret_dont_share"
+	}
+}

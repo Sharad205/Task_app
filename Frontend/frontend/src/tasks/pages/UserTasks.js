@@ -16,7 +16,7 @@ const UserTasks = () => {
 		const fetchTasks = async () => {
 			try {
 				const responseData = await sendRequest(
-					`http://localhost:2000/api/tasks/user/${userId}`
+					`${process.env.REACT_APP_BACKEND_URL}/tasks/user/${userId}`
 				);
 				setLoadedTasks(responseData.tasks);
 			} catch (err) {}

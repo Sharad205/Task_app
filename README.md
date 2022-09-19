@@ -1,7 +1,7 @@
 # Task_app
 yrMernTasks
 
-## https://yrmerntasks.web.app/
+## https://mymerntasks.web.app/
 ### Technology Used : MERN Stack(Mongodb for database,NodeJs and ExpressJs for Backend and ReactJs and Redux for Frontend)
 ## This is the all code files of this task app and also the link .
 ## You can open the link and check it out.
